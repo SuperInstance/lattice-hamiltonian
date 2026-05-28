@@ -1,0 +1,11 @@
+[package]
+name = "lattice-hamiltonian"
+version = "0.1.0"
+edition = "2021"
+description = "Lattice Hamiltonian systems — Ising/Potts models, transfer matrices, phase transitions, and Monte Carlo sampling on discrete manifolds"
+license = "MIT"
+keywords = ["lattice", "hamiltonian", "ising", "potts", "monte-carlo"]
+categories = ["mathematics", "science"]
+repository = "https://github.com/SuperInstance/lattice-hamiltonian"
+
+[lib]
