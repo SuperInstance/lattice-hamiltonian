@@ -73,7 +73,7 @@ mod tests {
     #[test]
     fn test_energy() {
         let model = PottsModel::new(4, 3, 1.0);
-        let e = model.energy();
+        let _e = model.energy();
         assert!(e.is_finite());
     }
 

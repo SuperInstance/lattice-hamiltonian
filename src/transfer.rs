@@ -12,7 +12,7 @@ pub struct TransferMatrix {
 impl TransferMatrix {
     pub fn new(j: f64, h: f64, temperature: f64) -> Self {
         let beta = 1.0 / temperature;
-        let e = beta.exp();
+        let _e = beta.exp();
         // States: -1 (index 0) and +1 (index 1)
         let matrix = [
             [(j * beta + h * beta).exp(), (-j * beta).exp()],

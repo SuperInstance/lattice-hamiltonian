@@ -96,7 +96,7 @@ mod tests {
     #[test]
     fn test_energy() {
         let model = IsingModel::new(4, 1.0, 0.0);
-        let e = model.energy();
+        let _e = model.energy();
         assert!(e.is_finite());
     }
 

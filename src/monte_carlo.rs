@@ -68,7 +68,7 @@ impl MetropolisSampler {
 fn rand_simple() -> f64 {
     use std::cell::Cell;
     thread_local! {
-        static STATE: Cell<u64> = Cell::new(123456789);
+        static STATE: Cell<u64> = const { Cell::new(123456789) };
     }
     STATE.with(|s| {
         let mut x = s.get();
